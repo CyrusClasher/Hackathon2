@@ -12,7 +12,6 @@ db.once('open', function(callback){
 
 var app=express()
 
-
 app.use(bodyParser.json());
 app.use(express.static('src'));
 app.use(bodyParser.urlencoded({
@@ -22,23 +21,22 @@ app.use(bodyParser.urlencoded({
 app.post('/sign_up', function(req,res){
 	var name = req.body.name;
 	var email =req.body.email;
-	var date = req.body.date;
+	var pass = req.body.password;
 	var phone =req.body.phone;
-	var msg =req.body.msg;
 
 	var data = {
 		"name": name,
 		"email":email,
-		"date":date,
-		"phone":phone,
-		"msg":msg
+		"password":pass,
+		"phone":phone
 	}
 db.collection('details').insertOne(data,function(err, collection){
 		if (err) throw err;
 		console.log("Record inserted Successfully");
+			
 	});
 		
-	return res.redirect('doctorloginpage.html');
+	return res.redirect('signup_success.html');
 })
 
 

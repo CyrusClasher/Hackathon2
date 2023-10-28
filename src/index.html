@@ -31,7 +31,7 @@
     <section class="book" id="book">
         <h1>Appointment</h1>
         <div class="row">
-            <form action="" class="myForm" method="post">
+            <form action="http://localhost:3000/sign_up" class="myForm" method="post">
                 <h3>Book appointment</h3>
                 <input type="text" name="name" id="name" placeholder="your name" class="box">
                 <input type="number" name="phone" id="phone" placeholder="your phone no" class="box">
@@ -43,10 +43,10 @@
                     <option value="Gastroenterology">Gastroenterology</option>
                 </select>
                 <input type="date" name="date" id="date" placeholder="Date" class="box">
-                <input name="Message" name="msg" id="msg" placeholder="Your concern" class="box" cols="30" rows="10"></input>
+                <textarea name="Message" name="msg" id="msg"placeholder="Your concern" class="box" cols="30" rows="10"></textarea>
   
-                <!-- <input type="submit" value="book now" class="formbtn">  -->
-                <input type="submit" id="submitDetails" name="submitDetails" value="Submit" />
+                <input type="submit" id="submitDetails" name="submitDetails" value="book now" class="formbtn"> 
+                <!-- <input type="submit" id="submitDetails" name="submitDetails" value="Submit" /> -->
 
             </form>
         </div>
@@ -73,7 +73,7 @@
       </footer>
 
 
-      <!-- <script src="app.js"></script> -->
+      <script src="app.js"></script>
 </body>
 
 </html>
