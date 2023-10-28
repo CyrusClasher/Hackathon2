@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav id="navbar">
+
+        <ul>
+            <li class="logo"><img src="../img/logo.png" alt="MY LOGO"></li>
+            <li class="items" ><a href="index.html">Home</a></li>
+           
+            <li class="items"><a href="#about">Contact US</a></li>
+            
+          
+             
+        </ul>
+        <div> <button class="btn"><a href="#book"> Book Appointment</a></button>
+            <button class="formbtn"><a href="login.html">Log Out </a></button></div>
+       
+    </nav>
+    <div class="container" id="container">
+        <p>We Provide <span>Free Medical Services</span> TO Everyone</p>
+    </div>
+
+    <section class="book" id="book">
+        <h1>Appointment</h1>
+        <div class="row">
+            <form action="" class="myForm" method="post">
+                <h3>Book appointment</h3>
+                <input type="text" name="name" id="name" placeholder="your name" class="box">
+                <input type="number" name="phone" id="phone" placeholder="your phone no" class="box">
+                <input type="email" name="email" id="email" placeholder="your email id" class="box">
+                <select class="box">
+                    <option value="Department">Department</option>
+                    <option value="Cardiac clinic">Cardiac clinic</option>
+                    <option value="Neurology">Neurology</option>
+                    <option value="Gastroenterology">Gastroenterology</option>
+                </select>
+                <input type="date" name="date" id="date" placeholder="Date" class="box">
+                <input name="Message" name="msg" id="msg" placeholder="Your concern" class="box" cols="30" rows="10"></input>
+  
+                <!-- <input type="submit" value="book now" class="formbtn">  -->
+                <input type="submit" id="submitDetails" name="submitDetails" value="Submit" />
+
+            </form>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <h1>About us</h1>
+        <div class="us">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem necessitatibus non id, illo fugit quisquam
+            dicta ducimus et eveniet nesciunt facere eos totam alias quo mollitia eaque, molestiae assumenda libero quod
+            incidunt! Officia, soluta provident. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed non
+            voluptatum expedita tempore reiciendis voluptate error laboriosam beatae praesentium quaerat?
+        </div>
+        <div class="socialmedia">
+           <img src="../img/icons8-facebook-30.png" alt="facebook">
+            <img src="../img/icons8-google-plus-100.png" alt="googleplus" height="30px"width="30px">
+            <img src="../img/icons8-instagram-30.png" alt="instagram">
+            <img src="../img/icons8-twitter-30.png" alt="twitter">
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+          Copyright &copy;WWW.mediplus.com. All rights reservesd
+        </div>
+      </footer>
+
+
+      <!-- <script src="app.js"></script> -->
+</body>
+
+</html>
